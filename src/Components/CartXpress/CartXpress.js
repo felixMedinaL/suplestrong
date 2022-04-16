@@ -1,9 +1,10 @@
+import './CartXpress.css'
 import { FaShoppingCart } from "react-icons/fa";
 
 const CartXpress = () => {
     return ( 
         <div>
-            <FaShoppingCart />
+            <FaShoppingCart className="icon" />
             {0}
         </div>
      );

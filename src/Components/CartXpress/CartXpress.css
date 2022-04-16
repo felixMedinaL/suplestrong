@@ -1,0 +1,8 @@
+.icon {
+    display: flex;
+    background-color: aqua;
+    height: 27px;
+    width: 35px;
+    color: black;
+    margin-top: 5px;
+}
