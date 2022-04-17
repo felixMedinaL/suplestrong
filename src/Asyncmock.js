@@ -16,3 +16,11 @@ export const getProducts = () => {
         }, 2000)
     })
 }
+
+export const getProductsById = () => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products)
+        }, 2000)
+    })
+}

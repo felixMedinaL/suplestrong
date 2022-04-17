@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getProducts } from '../../asyncmock'
+import ItemList from '../ItemList/ItemList'
 
 const ItemListContainer = (props) => {
 
@@ -16,7 +17,7 @@ const ItemListContainer = (props) => {
         <div>
             <h1>{props.greeting}</h1>
             <ul>
-                {products.map(products => <li>{products.name}</li>)}
+                <ItemList products={products} />
             </ul>
         </div>
         
