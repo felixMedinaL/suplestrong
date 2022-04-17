@@ -9,7 +9,7 @@ const products = [
 ]
 
 
-const getProducts = () => {
+export const getProducts = () => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(products)
