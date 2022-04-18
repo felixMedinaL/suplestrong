@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getProductsById } from '../../asyncmock';
+import {getProductsById} from '../../Asyncmock'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
@@ -23,15 +23,16 @@ const ItemDetailContainer = () => {
         return (() => {
             setProduct()
         });
+        
     }, [productId])
 
     return (
         <div className='ItemDetailContainer'>
             {
                 loading ?
-                    <h1>Cargando ... </h1> :
+                    <h1>Cargando... </h1> :
                 product ?
-                    <ItemDetail { ...product } /> :
+                    <ItemDetail {...product} /> :
                     <h1>El Producto no existe</h1>
             }
         </div>

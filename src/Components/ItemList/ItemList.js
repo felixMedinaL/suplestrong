@@ -1,11 +1,11 @@
-import Item from "../Item/Item";
+import Item from '../Item/Item';
 
 const ItemList = ({products}) => {
     return (
-        <ul>
-            {products.map(prod => <Item key={prod.id} { ...prod}/>)}
-        </ul>
-    );
+        <div>
+            {products.map(prod => <Item key={prod.id} {...prod}/>)}
+        </div>
+    )
 }
  
 export default ItemList;
