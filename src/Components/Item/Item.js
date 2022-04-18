@@ -1,8 +1,8 @@
 import './Item.css'
 import {Container, CardGroup, Card} from 'react-bootstrap/'
-import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
-const Item = ({name, price, description, img}) => {
+const Item = ({id, name, price, description, img}) => {
     return (
         <div className='cards'>
             <Container className="p-4">
@@ -13,11 +13,11 @@ const Item = ({name, price, description, img}) => {
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                       {description}
-                      {price}
+                      $ {price}
                     </Card.Text>
                   </Card.Body>
-                  <Card.Footer>
-                    <Button variant="primary">Mas Detalles</Button>{' '}
+                  <Card.Footer className='ButtonDetail'>
+                  <Link to={`/detail/${id}`} className='Boton'>Ver detalle</Link>
                   </Card.Footer>
                 </Card>
               </CardGroup>
