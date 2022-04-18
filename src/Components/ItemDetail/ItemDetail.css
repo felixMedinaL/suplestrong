@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-family: "Raleway", sans-serif;
+    background-color: #01e37f;
+  }
+  h3 {
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: #a6a6a6;
+  }
+  img {
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 3px #a6a6a6);
+  }
+  /* ----- Product Section ----- */
+  .product {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    margin: auto;
+    padding: 2.5em 0;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  /* ----- Photo Section ----- */
+  .productPhoto {
+    position: relative;
+  }
+  .Container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+  }
+  .productInfo {
+    padding: 0.8em 0;
+  }
+  .Title h1 {
+    margin-bottom: 0.1em;
+    color: #4c4c4c;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+
+  .price span {
+    padding-left: 0.15em;
+    font-size: 2.9em;
+  }
+  
+  Footer {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .buy {
+    padding: 1.5em 3.1em;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #fff;
+    background-color: #ff3f40;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;
+  }
+  .buy--btn:active {
+    transform: scale(0.97);
+  }
+  Footer a {
+    color: #4c4c4c;
+  }
+  Footer a:hover {
+    color: #ff3f40;
+  }
+  
