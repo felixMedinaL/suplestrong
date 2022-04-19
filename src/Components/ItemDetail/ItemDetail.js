@@ -1,16 +1,10 @@
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './ItemDetail.css'
 
 const ItemDetail = ({id, name, img, price, description, stock, category}) => {
     return (
         <section className="product">
-            <Card.Img>
-                <Container>
-                    <div className='productPhoto'>
-                      <img src={img} alt={name} />
-                    </div>
-                </Container>
-            </Card.Img>
+            <img src={img} alt={name} />   
             <Card.Body className='productInfo'>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
