@@ -1,12 +1,12 @@
-import './Item.css'
+import "./Item.css"
 import {Card} from 'react-bootstrap/'
 import { Link } from 'react-router-dom';
 
 const Item = ({id, name, price, description, img}) => {
     return (
-        <Card className='card text-center'>
-          <Card.Img variant='top' src={img} alt={name}/>
-          <Card.Body>
+        <Card className='m-3 text-center'>
+          <Card.Img src={img} alt={name}/>
+          <Card.Body className='bodyCard'>
             <Card.Title>{name}</Card.Title>
             <Card.Text className='text-secondary'>
               <h4>{description}</h4>

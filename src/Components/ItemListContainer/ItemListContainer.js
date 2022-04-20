@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { getProducts } from '../../Asyncmock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const ItemListContainer = (props) => {
 
@@ -24,11 +24,11 @@ const ItemListContainer = (props) => {
         <div>
             <h1>{props.greeting}</h1>
             <Container className='card'>
-              <div className='row'>
-                  <div className='col-md-3'>
+              <Row>
+                <Col xs={6} md={3}>   
                     <ItemList products={products}/>
-                  </div>              
-              </div>                
+                </Col>             
+              </Row>                
             </Container>
         </div>
         
