@@ -1,11 +1,4 @@
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
- }
-  
-.card {
-    flex: 0 1 24%;
-    width: 250;
-    height: 310;
+.bodyCard {
+    background-color: rgba(0, 255, 255, 0.411);
+    border: 1px solid black;
 }
